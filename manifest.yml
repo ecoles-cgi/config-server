@@ -1,0 +1,12 @@
+applications:
+- name: config-server
+  path: artifact\ecoles-config-server-(.*).jar
+  memory: 512M
+  buildpack: java_buildpack
+  instances: 1
+  random-route: true
+  env:
+    SPRING_PROFILES_ACTIVE: dev
+  services:
+    - db-cdb-config-server
+    - logs-pt-config-server

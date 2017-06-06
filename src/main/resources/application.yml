@@ -5,11 +5,11 @@ spring:
     config:
       server:
         git:
-          uri: ${vcap.services.get-config-store.url}
+          uri: ${vcap.services.git-config-store.url}
           # ONLY include username and pwd if the repo is private
           # username:
           # password:
 security:
   user:
-    name: {username}
-    password: {password}
+    name: myuser
+    password: password

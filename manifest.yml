@@ -8,5 +8,5 @@ applications:
   env:
     SPRING_PROFILES_ACTIVE: dev
   services:
-    - db-cdb-config-server
+    - git-config-store
     - logs-pt-config-server
